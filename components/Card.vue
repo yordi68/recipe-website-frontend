@@ -20,7 +20,7 @@ const props = defineProps({
 
 <template>
     <div class="flex flex-col w-80 items-center space-y-4">
-        <div class="w-80 h-60">
+        <div class="w-full h-60">
             <img src="/recipe-1.jpg" alt="" class="w-full h-full"/>
         </div>
 

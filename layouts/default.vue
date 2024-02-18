@@ -1,6 +1,8 @@
 <template>
     <div>
+        <Nuvbar />
         <slot />
+        <Footer />
     </div>
 
 </template>

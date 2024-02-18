@@ -1,0 +1,6 @@
+Do these:
+    - sign up button on the nav bar
+    - About us button on the hero section
+    - the cards image will zoom when you hover over them
+    - mobile design
+    
