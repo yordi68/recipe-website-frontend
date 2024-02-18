@@ -5,7 +5,7 @@ const props = defineProps({
         required: true
     }
 })
-// console.log(props.recipe.name)
+// console.log(props.recipe.author)
 
 </script>
 
