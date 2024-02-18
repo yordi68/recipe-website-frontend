@@ -1,12 +1,28 @@
+<script setup>
+const props = defineProps({
+    recipe: {
+        type: Object,
+        required: true
+    }
+})
+// console.log(props.recipe.name)
+
+</script>
+
+
+
+
+
+
+
+
+
+
 <template>
     <div class="flex flex-col w-80 items-center space-y-4">
         <div class="w-80 h-60">
-            <img src="/pasta-1.jpg" alt="" class="w-full h-full"/>
+            <img src="/recipe-1.jpg" alt="" class="w-full h-full"/>
         </div>
-
-        
-
-        
 
         <div class="w-11/12 space-y-2">
 

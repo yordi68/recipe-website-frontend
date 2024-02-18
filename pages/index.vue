@@ -7,9 +7,8 @@
 
 </template>
 
-<script>
-// import type { EditUser } from '#build/components';
-
-
-
+<script setup>
+definePageMeta({
+  layout: 'custom'
+})
 </script>
