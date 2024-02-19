@@ -1,6 +1,6 @@
 <template>
 
-    <nav class="w-full h-20 bg-[#1f1d27] flex justify-between items-center px-20">
+    <nav class="sticky top-0 z-10 w-full h-20 bg-[#1f1d27] flex justify-between items-center px-20">
         <div>
             <img src="/berecipes.png" alt="">
         </div>

@@ -5,7 +5,8 @@
         <div class="absolute w-1/3 left-32 top-36 space-y-6">
             <p class="text-[#20c05c] text-sm font-bold">WELCOME</p>
             <h2 class="text-4xl font-extrabold">Easy recipes for any occasion</h2>
-            <p class="text-md font-thin">Sed ultrices nisl velit, eu ornare est ullamcorper a. Nunc quis nibh magna. Proin risus erat, fringilla vel purus
+            <p class="text-md font-thin">Sed ultrices nisl velit, eu ornare est ullamcorper a. Nunc quis nibh magna. Proin
+                risus erat, fringilla vel purus
                 sit amet, mattis porta enim. Duis fermentum faucibus est.
             </p>
         </div>
@@ -13,7 +14,7 @@
 
     <div class="grid grid-cols-3 gap-y-8 w-4/5  items-center justify-center mx-auto">
         <div v-for="recipe in recipes">
-            <Card  :recipe="recipe" :key="recipe.name"/>
+            <Card :recipe="recipe" :key="recipe.name" />
         </div>
     </div>
 
@@ -24,7 +25,7 @@
             <div class="absolute w-1/3 left-20 top-28 space-y-6">
                 <p class="text-[#20c05c] text-sm font-bold capitalize">check this</p>
                 <h2 class="text-5xl font-extrabold text-white">other recipes</h2>
-                
+
             </div>
 
         </div>
@@ -32,8 +33,20 @@
     </div>
 
 
+    <div class="relative bg-cover bg-center min-h-screen flex items-center justify-center"
+        style="background-image: url('/hero-background-1.jpg'); background-size: 130%;">
 
+        <div class="absolute w-1/3 left-32 top-32 space-y-6">
+            <p class="text-[#20c05c] text-md font-bold">About us</p>
+            <h2 class="text-5xl font-extrabold text-white">Natural products and aromatic spices</h2>
+            <p class="text-md font-thin text-white">
+                Curabitur sed iaculis dolor, non congue ligula. Maecenas imperdiet ante eget hendrerit posuere. Nunc urna
+                libero, congue porta nibh a, semper feugiat sem. Sed auctor dui eleifend, scelerisque eros ut, pellentesque
+                nibh. Nam lacinia suscipit accumsan.
+            </p>
+        </div>
 
+    </div>
 </template>
 
 <script setup>

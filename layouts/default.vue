@@ -2,6 +2,7 @@
     <div>
         <Nuvbar />
         <slot />
+        <ScrollToTop />
         <Footer />
     </div>
 
