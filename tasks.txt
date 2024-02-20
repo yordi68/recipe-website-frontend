@@ -6,3 +6,4 @@ Do these:
 
 
 text-[#20c05c]
+navbar - color: bg-[#1f1d27]
