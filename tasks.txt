@@ -3,4 +3,6 @@ Do these:
     - About us button on the hero section
     - the cards image will zoom when you hover over them
     - mobile design
-    
+
+
+text-[#20c05c]
