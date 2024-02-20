@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Navbar />
+        <Nuvbar />
         <slot />
         <ScrollToTop />
         <Footer />
