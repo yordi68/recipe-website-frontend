@@ -1,17 +1,19 @@
 <template>
-    <div>
+    <main>
         <Nuvbar />
-        <slot />
-        <ScrollToTop />
+        <div>
+            <slot />
+            <ScrollToTop />
+        </div>
         <Footer />
-    </div>
+    </main>
 
 </template>
 
 <script setup>
 
 </script>
-
+<!-- class="mx-auto max-w-7xl sm:px-6 lg:px-8" -->
 <style>
 
 </style>
