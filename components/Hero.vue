@@ -12,9 +12,9 @@
         </div>
     </div>
 
-    <div class="grid grid-cols-3 gap-y-8 w-4/5  items-center justify-center mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-y-8 my-10 w-4/5  items-center justify-center mx-auto">
         <div v-for="recipe in recipes">
-            <Card :recipe="recipe" :key="recipe.name" />
+            <Card  :recipe="recipe" :key="recipe.name"/>
         </div>
     </div>
 

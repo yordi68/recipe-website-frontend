@@ -1,21 +1,12 @@
 <template>
-  <aside class="h-screen">
+  <aside class="h-5/6">
     <div class="h-full flex flex-col justify-between bg-white border-r shadow-sm">
 
 
 
-      <div class="p-4 pb-2 flex justify-between items-center border-b">
-        <img src="https://img.logoipsum.com/243.svg" class="w-32" alt="" />
-        <button class="p-1.5 rounded-lg bg-gray-50 hover:bg-gray-100">
-          <Icon name="tabler:layout-sidebar-left-collapse" />
-        </button>
-      </div>
-
-
-
-      <ul class="flex-1 px-3">
-
+      <ul class="flex-1 px-3 mt-10">
         <div class="flex flex-col space-y-4">
+          
           <li
             class="relative flex items-center py-2 px-3 my-1 font-medium rounded-md cursor-pointer">
             <Icon name="material-symbols:dashboard" size="32" />
@@ -64,10 +55,8 @@
       </ul>
 
       <div class="border-t flex p-3 items-center">
-        <img src="" alt="" />
-        <div class="flex flex-col ml-3">
-          <h4 class="font-semibold">John Doe</h4>
-          <span class="text-xs text-gray-600">johndoe@gmail.com</span>
+        <div class="ml-3">
+          <Button label="Logout" severity="Primary" class="bg-[#20c05c] px-6 py-2 rounded-md"/>
         </div>
       </div>
 
@@ -77,6 +66,8 @@
 </template>
   
 <script setup>
+
+import Button from 'primevue/button';
 
 </script>
   

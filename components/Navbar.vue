@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="sticky top-0 z-10">
     <Disclosure as="nav" class="bg-[#1e1d26]" v-slot="{ open }">
-      <div class="mx-auto w-full md:h-20 px-4 sm:px-6 lg:px-32">
-        <div class="flex h-full  items-center justify-between">
+      <div class="mx-auto w-full  md:h-20 px-4 sm:px-6 lg:px-32">
+        <div class="flex h-full  items-center justify-between ">
 
           <div class="flex items-center space-x-96">
             <div>
