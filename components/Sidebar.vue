@@ -8,46 +8,16 @@
         <div class="flex flex-col space-y-4">
           
           <li
-            class="relative flex items-center py-2 px-3 my-1 font-medium rounded-md cursor-pointer">
-            <Icon name="material-symbols:dashboard" size="32" />
-            <NuxtLink exact-active-class="text-orange-500 dark:text-[#B9B4C7]" to="#">
-              <span class="w-52 ml-3">Dashboard</span>
-            </NuxtLink>
-          </li>
-
-
-          <li
-            class="relative flex items-center py-2 px-3 my-1 font-medium rounded-md cursor-pointer ">
-            <Icon name="f7:square-favorites-alt-fill" size="32" />
-            <NuxtLink exact-active-class="text-orange-500 dark:text-[#B9B4C7]" to="/user/addRecipe">
-              <span class="w-52 ml-3">Add Recipe</span>
-            </NuxtLink>
-          </li>
-
-
-          <li
-            class="relative flex items-center py-2 px-3 my-1 font-medium rounded-md cursor-pointer">
-            <Icon name="gg:profile" size="32" />
-            <NuxtLink exact-active-class="text-orange-500 dark:text-[#B9B4C7]" to="/user">
-              <span class="w-52 ml-3">Edit Profile</span>
-            </NuxtLink>
-          </li>
-
-
-          <li
-            class="relative flex items-center py-2 px-3 my-1 font-medium rounded-md cursor-pointer">
-            <Icon name="arcticons:recipe-keeper" size="32" />
-            <NuxtLink exact-active-class="text-orange-500 dark:text-[#B9B4C7]" to="#">
-              <span class="w-52 ml-3">My Recipes</span>
-            </NuxtLink>
-          </li>
-
-
-          <li
-            class="relative flex items-center py-2 px-3 my-1 font-medium rounded-md cursor-pointer">
-            <Icon name="tabler:settings" size="32" />
-            <NuxtLink exact-active-class="text-orange-500 dark:text-[#B9B4C7]" to="#">
-              <span class="w-52 ml-3">Settings</span>
+            class="relative flex items-center py-2 px-3 my-1 font-medium rounded-md cursor-pointer"
+            v-for="item in sidebarItems"
+            :key="item.name"
+            >
+            <Icon :name="item.icon" size="32" />
+            <NuxtLink 
+              exact-active-class="text-extrabold text-[#20c05c]" 
+              :to="item.to"
+            >
+              <span class="w-52 ml-3">{{ item.name}}</span>
             </NuxtLink>
           </li>
 
@@ -68,6 +38,13 @@
 <script setup>
 
 import Button from 'primevue/button';
+const sidebarItems = [
+  {name: 'Dashboard', icon: 'material-symbols:dashboard', to:'#'},
+  {name: 'Add Recipe', icon: 'arcticons:recipe-keeper', to: '/user/addrecipe'},
+  {name: 'Edit Profile', icon: 'gg:profile', to: '/user'},
+  {name: 'My Recipes', icon: 'f7:square-favorites-alt-fill', to:'#'},
+  {name: 'Settings', icon: 'tabler:settings', to:'#'},
+]
 
 </script>
   
