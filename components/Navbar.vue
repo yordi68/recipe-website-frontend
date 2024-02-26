@@ -10,30 +10,29 @@
                 <img src="/berecipes.png" alt="">
               </NuxtLink>
             </div>
-            
-           
-              <div class="hidden md:block flex items-center space-x-12 text-white">
-                <NuxtLink v-for="item in navigation" :key="item.name" :to="item.to"
-                  exact-active-class="text-extrabold text-[#20c05c] w-20"
-                  >{{ item.name }}</NuxtLink>
-                </div>
-              
 
-              <!-- <button @click="showSignInModal" class="cursor-pointer">Sign In</button>s
+
+            <div class="hidden md:block flex items-center space-x-12 text-white">
+              <NuxtLink v-for="item in navigation" :key="item.name" :to="item.to"
+                exact-active-class="text-extrabold text-[#20c05c] w-20">{{ item.name }}</NuxtLink>
+            </div>
+
+
+            <!-- <button @click="showSignInModal" class="cursor-pointer">Sign In</button>s
               <Button label="Sign in" @click="showSignInModal" class="bg-[#20c05c] !w-30 whitespace-nowrap px-4 py-2 rounded-md cursor-pointer" />
               <SignIn v-if="isSignInModalVisible" @close="hideSignInModal" /> -->
 
 
-            
+
 
 
           </div>
 
-          
-          
-          
-          
-          
+
+
+
+
+
           <div class="-mr-2 flex md:hidden">
             <!-- Mobile menu button -->
             <DisclosureButton
@@ -53,13 +52,12 @@
       <DisclosurePanel class="sm:hidden">
         <div class="space-y-1 px-2 pb-3 pt-2">
           <NuxtLink v-for="item in navigation" :key="item.name" :to="item.to">
-            <DisclosureButton :key="item.name" 
-            class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-            exact-active-class="text-extrabold text-[#20c05c]"
-            >
-            {{ item.name }}
-          </DisclosureButton>
-        </NuxtLink>
+            <DisclosureButton :key="item.name"
+              class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+              exact-active-class="text-extrabold text-[#20c05c]">
+              {{ item.name }}
+            </DisclosureButton>
+          </NuxtLink>
         </div>
       </DisclosurePanel>
 
@@ -67,7 +65,7 @@
 
 
 
-    
+
 
 
 
@@ -91,7 +89,7 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/vue/24/outline'
 const navigation = [
   { name: 'Home', to: '/home', current: true },
   { name: 'Recipes', to: '/recipes', current: false },
-  { name: 'About us', to: '#', current: false },
+  { name: 'About us', to: '/about', current: false },
   { name: 'Sign in', to: '#', current: false },
   // { name: 'Reports', to: '#', current: false },
 ]
