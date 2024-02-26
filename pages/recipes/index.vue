@@ -1,5 +1,4 @@
 <template>
-    <!-- <Nuvbar /> -->
 
     <div class="relative bg-cover bg-center h-64"
         style="background-image: url('/background-recipe.jpg'); background-size: 140%;">

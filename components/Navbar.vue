@@ -4,20 +4,28 @@
       <div class="mx-auto w-full  md:h-20 px-4 sm:px-6 lg:px-32">
         <div class="flex h-full  items-center justify-between ">
 
-          <div class="flex items-center space-x-96">
+          <div class="flex items-center justify-between w-full">
             <div>
               <NuxtLink to="/home">
                 <img src="/berecipes.png" alt="">
               </NuxtLink>
             </div>
-
-            <div class="hidden md:block">
-              <div class="flex items-center space-x-12 text-white">
+            
+           
+              <div class="hidden md:block flex items-center space-x-12 text-white">
                 <NuxtLink v-for="item in navigation" :key="item.name" :to="item.to"
-                  exact-active-class="text-extrabold text-[#20c05c]"
-                >{{ item.name }}</NuxtLink>
-              </div>
-            </div>
+                  exact-active-class="text-extrabold text-[#20c05c] w-20"
+                  >{{ item.name }}</NuxtLink>
+                </div>
+              
+
+              <!-- <button @click="showSignInModal" class="cursor-pointer">Sign In</button>s
+              <Button label="Sign in" @click="showSignInModal" class="bg-[#20c05c] !w-30 whitespace-nowrap px-4 py-2 rounded-md cursor-pointer" />
+              <SignIn v-if="isSignInModalVisible" @close="hideSignInModal" /> -->
+
+
+            
+
 
           </div>
 
@@ -93,4 +101,25 @@ const navigation = [
 //   { name: 'Settings', to: '#' },
 //   { name: 'Sign out', to: '#' },
 // ]
+
+
+const isSignInModalVisible = ref(false);
+
+function showSignInModal() {
+  isSignInModalVisible.value = true;
+}
+
+function hideSignInModal() {
+  isSignInModalVisible.value = false;
+}
+
+
+{/* <template>
+  <div>
+    <button @click="showSignInModal">Sign In</button>
+  </div>
+</template> */}
+
+
+
 </script>
