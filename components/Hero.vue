@@ -9,12 +9,30 @@
                 risus erat, fringilla vel purus
                 sit amet, mattis porta enim. Duis fermentum faucibus est.
             </p>
+            <button class="flex gap-x-6 bg-[#20c05c] text-white px-10 py-4">
+                <div>
+                    About us
+                </div>
+
+
+                <div class="w-6 h-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+                        stroke="currentColor" className="w-6 h-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                    </svg>
+                </div>
+
+            </button>
+
+
+
+
         </div>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-y-8 my-10 w-4/5  items-center justify-center mx-auto">
         <div v-for="recipe in recipes">
-            <Card  :recipe="recipe" :key="recipe.name"/>
+            <Card :recipe="recipe" :key="recipe.name" />
         </div>
     </div>
 

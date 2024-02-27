@@ -90,7 +90,7 @@ const navigation = [
   { name: 'Home', to: '/home', current: true },
   { name: 'Recipes', to: '/recipes', current: false },
   { name: 'About us', to: '/about', current: false },
-  { name: 'Sign in', to: '#', current: false },
+  { name: 'Sign in', to: '/signin', current: false },
   // { name: 'Reports', to: '#', current: false },
 ]
 

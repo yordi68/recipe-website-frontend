@@ -5,5 +5,8 @@ Do these:
     - mobile design
 
 
-text-[#20c05c]
+text-[#20c05c] -> original, brighter
+text-[#1a9e4e] -> hover, darker
+
+
 navbar - color: bg-[#1f1d27]

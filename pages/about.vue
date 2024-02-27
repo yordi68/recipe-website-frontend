@@ -30,12 +30,13 @@
                         <img src="/chef.png" alt="" class="absolute right-10 top-32 w-2/5">
                 </div>
 
-                <Testimonials />
                 <div class="grid grid-cols-3 items-center px-40">
-                        <div class="flex flex-col w-72">
-                                <img src="/recipe-1.jpg" alt="" class="w-40 h-40 rounded-full">
-                                <h3>Proin bibendum sollicitudin feugiat</h3>
-                                <p>
+
+
+                        <div class="flex flex-col w-72 space-y-6">
+                                <img src="/recipe-1.jpg" alt="" class="w-40 h-40 rounded-full my-10 mx-auto">
+                                <h3 class="text-2xl text-center font-semibold">Proin bibendum sollicitudin feugiat</h3>
+                                <p class="text-center">
                                         Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante.
                                         Integer
                                         magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim
@@ -43,10 +44,21 @@
                                 </p>
                         </div>
 
-                        <div class="flex flex-col w-72">
-                                <img src="/recipe-1.jpg" alt="" class="w-40 h-40 rounded-full">
-                                <h3>Proin bibendum sollicitudin feugiat</h3>
-                                <p>
+                        <div class="flex flex-col w-72 space-y-6">
+                                <img src="/recipe-1.jpg" alt="" class="w-40 h-40 rounded-full my-10 mx-auto">
+                                <h3 class="text-2xl text-center font-semibold">Proin bibendum sollicitudin feugiat</h3>
+                                <p class="text-center">
+                                        Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante.
+                                        Integer
+                                        magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim
+                                        facilisis, massa
+                                </p>
+                        </div>
+
+                        <div class="flex flex-col w-72 space-y-6">
+                                <img src="/recipe-1.jpg" alt="" class="w-40 h-40 rounded-full my-10 mx-auto">
+                                <h3 class="text-2xl text-center font-semibold">Proin bibendum sollicitudin feugiat</h3>
+                                <p class="text-center text-gray-900">
                                         Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante.
                                         Integer
                                         magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim
@@ -55,20 +67,15 @@
                         </div>
 
 
-                        <div class="flex flex-col w-72">
-                                <img src="/recipe-1.jpg" alt="" class="w-40 h-40 rounded-full">
-                                <h3>Proin bibendum sollicitudin feugiat</h3>
-                                <p>
-                                        Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante.
-                                        Integer
-                                        magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim
-                                        facilisis, massa
-                                </p>
-                        </div>
+
                 </div>
 
+                <Testimonials />
+
+
         </div>
-</template>
+</template>               
+
 
 <script setup>
 
