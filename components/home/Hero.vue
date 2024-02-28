@@ -24,45 +24,7 @@
 
             </button>
 
-
-
-
         </div>
-    </div>
-
-    <!-- <div class="grid grid-cols-1 md:grid-cols-3 gap-y-8 my-10 w-4/5  items-center justify-center mx-auto">
-        <div v-for="recipe in recipes">
-            <Card :recipe="recipe" :key="recipe.name" />
-        </div>
-    </div> -->
-    <div class="bg-cover bg-center h-screen flex items-center justify-center"
-        style="background-image: url('/hero-background-2.jpg'); background-size: 150%;">
-        <div class="relative bg-cover bg-center h-96 w-9/12"
-            style="background-image: url('/hero-background-6.jpg'); background-size: 130%;">
-            <div class="absolute w-1/3 left-20 top-28 space-y-6">
-                <p class="text-[#20c05c] text-sm font-bold capitalize">check this</p>
-                <h2 class="text-5xl font-extrabold text-white">other recipes</h2>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <div class="relative bg-cover bg-center min-h-screen flex items-center justify-center"
-        style="background-image: url('/hero-background-1.jpg'); background-size: 130%;">
-
-        <div class="absolute w-1/3 left-32 top-32 space-y-6">
-            <p class="text-[#20c05c] text-md font-bold">About us</p>
-            <h2 class="text-5xl font-extrabold text-white">Natural products and aromatic spices</h2>
-            <p class="text-md font-thin text-white">
-                Curabitur sed iaculis dolor, non congue ligula. Maecenas imperdiet ante eget hendrerit posuere. Nunc urna
-                libero, congue porta nibh a, semper feugiat sem. Sed auctor dui eleifend, scelerisque eros ut, pellentesque
-                nibh. Nam lacinia suscipit accumsan.
-            </p>
-        </div>
-
     </div>
 </template>
 
