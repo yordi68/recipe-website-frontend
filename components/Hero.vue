@@ -30,12 +30,11 @@
         </div>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-y-8 my-10 w-4/5  items-center justify-center mx-auto">
+    <!-- <div class="grid grid-cols-1 md:grid-cols-3 gap-y-8 my-10 w-4/5  items-center justify-center mx-auto">
         <div v-for="recipe in recipes">
             <Card :recipe="recipe" :key="recipe.name" />
         </div>
-    </div>
-
+    </div> -->
     <div class="bg-cover bg-center h-screen flex items-center justify-center"
         style="background-image: url('/hero-background-2.jpg'); background-size: 150%;">
         <div class="relative bg-cover bg-center h-96 w-9/12"
